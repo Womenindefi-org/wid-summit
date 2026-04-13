@@ -72,7 +72,7 @@ const Footer = () => {
 							{
 								title: 'Summit',
 								links: [
-									{ label: 'Speakers', url: '' },
+									{ label: 'Speakers', url: '?/2026/speakers' },
 									{ label: 'Schedule', url: '' },
 									{ label: 'Register', url: '?register=true' },
 								],
@@ -84,10 +84,10 @@ const Footer = () => {
 										label: 'Become a Sponsor',
 										url: 'https://drive.google.com/file/d/1v3qNuBCze0xZtmDwomDu5-tkL23BGye_/view?usp=drivesdk',
 									},
-									{
-										label: 'Call for Speakers',
-										url: 'https://docs.google.com/forms/d/e/1FAIpQLSc_HCCqkbCglgFZEupSSM0RVVRK3KDQ1L7yga_cZx3a4QJGig/viewform?usp=header',
-									},
+									// {
+									// 	label: 'Call for Speakers',
+									// 	url: 'https://docs.google.com/forms/d/e/1FAIpQLSc_HCCqkbCglgFZEupSSM0RVVRK3KDQ1L7yga_cZx3a4QJGig/viewform?usp=header',
+									// },
 									{
 										label: 'Volunteer',
 										url: 'https://forms.gle/Bm8fu4BYkGcPQn917',
