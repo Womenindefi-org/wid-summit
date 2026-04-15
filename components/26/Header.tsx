@@ -29,8 +29,8 @@ const Header = () => {
 
 	const navItems = [
 		{
-			name: 'Call for Speakers',
-			url: 'https://docs.google.com/forms/d/e/1FAIpQLSc_HCCqkbCglgFZEupSSM0RVVRK3KDQ1L7yga_cZx3a4QJGig/viewform?usp=header',
+			name: 'Speakers',
+			url: '/2026/speakers',
 		},
 		{
 			name: 'Volunteer',
