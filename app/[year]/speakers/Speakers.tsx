@@ -41,6 +41,12 @@ const speakers: Speaker[] = [
     image: "/images/Tejumade.jpg",
   },
   {
+    name: "Beatrice Eneje",
+    role: "Managing Director, Kora & Hive Communications",
+    xUrl: "https://x.com/bibi_eneje?s=20",
+    image: "/images/Beatrice-Speaker.jpg",
+  },
+  {
     name: "Dr. Eloho Erezi-Kesi",
     role: "Global Ambassador, ZCash",
     xUrl: "#",
@@ -57,6 +63,12 @@ const speakers: Speaker[] = [
     role: "Director of Waga Coffee Nigeria",
     xUrl: "https://x.com/OjiakuJennifer?s=20",
     image: "/images/Jennifer.jpeg",
+  },
+  {
+    name: "Ivy Elebesunu",
+    role: "Content Strategist",
+    xUrl: "https://www.linkedin.com/in/ivyelebesunu",
+    image: "/images/Ivy Elebesunu.JPEG",
   },
   {
     name: "Favour Nduka",
@@ -84,6 +96,12 @@ const speakers: Speaker[] = [
     image: "/images/Toria.jpg",
   },
   {
+    name: "Sarah Wahinya",
+    role: "Stellar East Africa President",
+    xUrl: "https://x.com/SarahWahinya",
+    image: "/images/Sarahspeaker-headshot.jpeg",
+  },
+  {
     name: "Amarachi Ugwu",
     role: "Co-founder, Digitpay",
     xUrl: "https://x.com/amarachiugwu_?s=20",
@@ -102,22 +120,22 @@ const speakers: Speaker[] = [
     image: "/images/Bekka.JPG",
   },
   {
-    name: "Sarah Wahinya",
-    role: "Stellar East Africa President",
-    xUrl: "https://x.com/SarahWahinya",
-    image: "/images/Sarahspeaker-headshot.jpeg",
+    name: "Chidubem Emelumadu",
+    role: "Ecosystem Lead (Africa), Lisk",
+    xUrl: "https://x.com/chiidubem?s=20",
+    image: "/images/Chidubem.jpg",
+  },
+  {
+    name: "Giwa Sheedah",
+    role: "Founder CTNG House",
+    xUrl: "https://x.com/qingthecreator_",
+    image: "/images/Giwa Sheedah.JPEG",
   },
   {
     name: "Akintola Oluwapelumi",
-    role: "Host",
+    role: "Event Host",
     xUrl: "https://x.com/flame_s__?s=20",
     image: "/images/Akintola.jpg",
-  },
-  {
-    name: "Beatrice Eneje",
-    role: "Managing Director, Kora & Hive Communications",
-    xUrl: "https://x.com/bibi_eneje?s=20",
-    image: "/images/Beatrice-Speaker.jpg",
   },
   {
     name: "Nkechi Enebeli",
@@ -126,10 +144,10 @@ const speakers: Speaker[] = [
     image: "/images/Nkechi.jpg",
   },
   {
-    name: "Chidubem Emelumadu",
-    role: "Ecosystem Lead (Africa), Lisk",
-    xUrl: "https://x.com/chiidubem?s=20",
-    image: "/images/Chidubem.jpg",
+    name: "Simbiat Lawal",
+    role: "Red Carpet Host & Crowd Interviewer",
+    xUrl: "https://www.linkedin.com/in/simbiat-lawal-93a819281",
+    image: "/images/Simbiat Lawal.JPEG",
   },
 ];
 
