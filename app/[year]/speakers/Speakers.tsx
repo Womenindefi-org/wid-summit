@@ -1,14 +1,18 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
+
+const SPEAKER_IMAGE_SIZES =
+  "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw";
 
 interface Speaker {
   name: string;
   image: string;
   xUrl: string;
   role?: string;
+  imageClassName?: string;
 }
 
 const speakers: Speaker[] = [
@@ -16,19 +20,19 @@ const speakers: Speaker[] = [
     name: "Sarah Idahosa",
     role: "Founder, Women in Defi",
     xUrl: "https://x.com/thesarahidahosa?s=20",
-    image: "/images/IMG_20240909_115610_822.jpeg",
+    image: "/images/Sarah Idahosa.jpg",
   },
   {
     name: "Onone Ega Peace",
     role: "Programs Lead, Women in Defi",
     xUrl: "https://x.com/10x_Ega?s=20",
-    image: "/images/Peace.jpg",
+    image: "/images/Peace.JPG",
   },
   {
     name: "Progress Ochuko Eyaadah",
     role: "Co-founder, Choppaddi",
     xUrl: "https://x.com/koxy_dev?s=21",
-    image: "/images/Progress.jpg",
+    image: "/images/Progress.JPG",
   },
   {
     name: "Tejumade Tejuoso",
@@ -40,7 +44,7 @@ const speakers: Speaker[] = [
     name: "Dr. Eloho Erezi-Kesi",
     role: "Global Ambassador, ZCash",
     xUrl: "#",
-    image: "/images/Dr. Eloho Erezi-Kesi.jpg",
+    image: "/images/Dr. Eloho Erezi-Kesi.JPG",
   },
   {
     name: "Ayomide Junaid",
@@ -71,6 +75,7 @@ const speakers: Speaker[] = [
     role: "Founder, Peaches Academy",
     xUrl: "https://x.com/1CryptoMama?s=20",
     image: "/images/Chisom.jpg",
+    imageClassName: "scale-[1.35]",
   },
   {
     name: "Toria Dickson",
@@ -94,7 +99,7 @@ const speakers: Speaker[] = [
     name: "Ayomide Oluwashinabajo",
     role: "Business developer, VelaFinance",
     xUrl: "https://x.com/ayomide_bajo?s=20",
-    image: "/images/Bekka.png",
+    image: "/images/Bekka.JPG",
   },
   {
     name: "Sarah Wahinya",
@@ -161,11 +166,17 @@ const Speakers = () => {
                   isSecondOfLastTwo && "lg:col-start-3",
                 )}
               >
-                <div className="relative aspect-3/5 overflow-hidden rounded-[1.25rem] mb-4 bg-[#F5F5F5]">
-                  <img
+                <div className="relative aspect-4/5 overflow-hidden rounded-[1.25rem] mb-4 bg-[#F5F5F5]">
+                  <Image
                     src={speaker.image}
                     alt={speaker.name}
-                    className="w-full h-full object-cover transition-all duration-500 scale-100 group-hover:scale-110"
+                    fill
+                    sizes={SPEAKER_IMAGE_SIZES}
+                    quality={85}
+                    className={cn(
+                      "object-cover object-top transition-transform duration-500 scale-100 group-hover:scale-110",
+                      speaker.imageClassName,
+                    )}
                   />
                 </div>
                 <Link
