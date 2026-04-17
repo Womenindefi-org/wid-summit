@@ -13,14 +13,38 @@ interface Speaker {
 
 const speakers: Speaker[] = [
   {
-    name: "Akintola Oluwapelumi",
-    role: "Host",
-    xUrl: "https://x.com/flame_s__?s=20",
-    image: "/images/Akintola.jpg",
+    name: "Sarah Idahosa",
+    role: "Founder, Women in Defi",
+    xUrl: "https://x.com/thesarahidahosa?s=20",
+    image: "/images/IMG_20240909_115610_822.jpeg",
+  },
+  {
+    name: "Onone Ega Peace",
+    role: "Programs Lead, Women in Defi",
+    xUrl: "https://x.com/10x_Ega?s=20",
+    image: "/images/Peace.jpg",
+  },
+  {
+    name: "Progress Ochuko Eyaadah",
+    role: "Co-founder, Choppaddi",
+    xUrl: "https://x.com/koxy_dev?s=21",
+    image: "/images/Progress.jpg",
+  },
+  {
+    name: "Tejumade Tejuoso",
+    role: "Governance & Sustainability Manager, Sahara Group",
+    xUrl: "#",
+    image: "/images/Tejumade.jpg",
+  },
+  {
+    name: "Dr. Eloho Erezi-Kesi",
+    role: "Global Ambassador, ZCash",
+    xUrl: "#",
+    image: "/images/Dr. Eloho Erezi-Kesi.jpg",
   },
   {
     name: "Ayomide Junaid",
-    role: "Compliance Officer, OAPay",
+    role: "Head of Legal, Verde Fields",
     xUrl: "http://x.com/theirregulargal",
     image: "/images/Ayomide-speaker.jpg",
   },
@@ -43,12 +67,6 @@ const speakers: Speaker[] = [
     image: "/images/Faith-speaker.jpg",
   },
   {
-    name: "Progress Ochuko Eyaadah",
-    role: "Co-founder, Choppaddi",
-    xUrl: "https://x.com/koxy_dev?s=21",
-    image: "/images/Progress.jpg",
-  },
-  {
     name: "Chisom Edwin",
     role: "Founder, Peaches Academy",
     xUrl: "https://x.com/1CryptoMama?s=20",
@@ -56,7 +74,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Toria Dickson",
-    role: "Founder, ToriaX | Marketing Agency (Moderator)",
+    role: "Founder, ToriaX | Marketing Agency",
     xUrl: "https://x.com/toria_dickson?s=21",
     image: "/images/Toria.jpg",
   },
@@ -68,7 +86,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Vivian Adeniyi",
-    role: "Content Specialist (Moderator)",
+    role: "Content Specialist",
     xUrl: "https://x.com/queenxrypt",
     image: "/images/Vivian-Moderator.jpg",
   },
@@ -85,10 +103,10 @@ const speakers: Speaker[] = [
     image: "/images/Sarahspeaker-headshot.jpeg",
   },
   {
-    name: "Tejumade Tejuoso",
-    role: "Governance & Sustainability Manager, Sahara Group",
-    xUrl: "#",
-    image: "/images/Tejumade.jpg",
+    name: "Akintola Oluwapelumi",
+    role: "Host",
+    xUrl: "https://x.com/flame_s__?s=20",
+    image: "/images/Akintola.jpg",
   },
   {
     name: "Beatrice Eneje",
@@ -101,18 +119,6 @@ const speakers: Speaker[] = [
     role: "Community Builder",
     xUrl: "https://x.com/__iamcharis?s=20",
     image: "/images/Nkechi.jpg",
-  },
-  {
-    name: "Onone Ega Peace",
-    role: "Programs Lead, Women in Defi",
-    xUrl: "https://x.com/10x_Ega?s=20",
-    image: "/images/Peace.jpg",
-  },
-  {
-    name: "Sarah Idahosa",
-    role: "Founder, Women in Defi",
-    xUrl: "https://x.com/thesarahidahosa?s=20",
-    image: "/images/IMG_20240909_115610_822.jpeg",
   },
   {
     name: "Chidubem Emelumadu",
