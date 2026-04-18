@@ -83,6 +83,12 @@ const speakers: Speaker[] = [
     image: "/images/Faith-speaker.jpg",
   },
   {
+    name: "Sarah Wahinya",
+    role: "Stellar East Africa President",
+    xUrl: "https://x.com/SarahWahinya",
+    image: "/images/Sarahspeaker-headshot.jpeg",
+  },
+  {
     name: "Chisom Edwin",
     role: "Founder, Peaches Academy",
     xUrl: "https://x.com/1CryptoMama?s=20",
@@ -94,12 +100,6 @@ const speakers: Speaker[] = [
     role: "Founder, ToriaX | Marketing Agency",
     xUrl: "https://x.com/toria_dickson?s=21",
     image: "/images/Toria.jpg",
-  },
-  {
-    name: "Sarah Wahinya",
-    role: "Stellar East Africa President",
-    xUrl: "https://x.com/SarahWahinya",
-    image: "/images/Sarahspeaker-headshot.jpeg",
   },
   {
     name: "Amarachi Ugwu",
@@ -120,6 +120,12 @@ const speakers: Speaker[] = [
     image: "/images/Bekka.JPG",
   },
   {
+    name: "Amara Achusi",
+    role: "CoFounder, TulayLabs",
+    xUrl: "https://x.com/TheMarablossom",
+    image: "/images/Amara.JPG",
+  },
+  {
     name: "Chidubem Emelumadu",
     role: "Ecosystem Lead (Africa), Lisk",
     xUrl: "https://x.com/chiidubem?s=20",
@@ -132,16 +138,16 @@ const speakers: Speaker[] = [
     image: "/images/Giwa Sheedah.JPEG",
   },
   {
+    name: "Yewande Abiodun",
+    role: "SW Nigeria Growth Lead, Base",
+    xUrl: "https://x.com/lionessatease",
+    image: "/images/Yewande.JPEG",
+  },
+  {
     name: "Akintola Oluwapelumi",
     role: "Event Host",
     xUrl: "https://x.com/flame_s__?s=20",
     image: "/images/Akintola.jpg",
-  },
-  {
-    name: "Nkechi Enebeli",
-    role: "Community Builder",
-    xUrl: "https://x.com/__iamcharis?s=20",
-    image: "/images/Nkechi.jpg",
   },
   {
     name: "Simbiat Lawal",
