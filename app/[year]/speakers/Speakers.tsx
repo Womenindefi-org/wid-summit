@@ -150,12 +150,6 @@ const speakers: Speaker[] = [
     image: "/images/Akintola.jpg",
   },
   {
-    name: "Nkechi Enebeli",
-    role: "Community Builder",
-    xUrl: "https://x.com/__iamcharis?s=20",
-    image: "/images/Nkechi.jpg",
-  },
-  {
     name: "Simbiat Lawal",
     role: "Red Carpet Host",
     xUrl: "https://www.linkedin.com/in/simbiat-lawal-93a819281",
