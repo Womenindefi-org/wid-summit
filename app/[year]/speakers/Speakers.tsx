@@ -145,7 +145,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Simbiat Lawal",
-    role: "Red Carpet Host & Crowd Interviewer",
+    role: "Red Carpet Host",
     xUrl: "https://www.linkedin.com/in/simbiat-lawal-93a819281",
     image: "/images/Simbiat Lawal.JPEG",
   },
