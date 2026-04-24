@@ -38,7 +38,7 @@ const Header = () => {
     },
     {
       name: "Schedule",
-      url: "",
+      url: "/2026/schedule",
     },
   ];
 
