@@ -37,6 +37,7 @@ interface Session {
 }
 
 const sessions: Session[] = [
+  // Registration block kept as-is (pre-event, 8:45–9:30)
   {
     id: "s1",
     time: "8:45 AM",
@@ -45,6 +46,7 @@ const sessions: Session[] = [
     type: "registration",
     tag: "Registration",
   },
+  // 10:00 - 10:05 AM — WID Stories Spotlight
   {
     id: "s2",
     time: "10:00 AM",
@@ -56,6 +58,7 @@ const sessions: Session[] = [
     speakers: [{ name: "Media" }],
     tag: "Spotlight",
   },
+  // 10:05 - 10:10 AM — Welcome Address
   {
     id: "s3",
     time: "10:05 AM",
@@ -65,6 +68,7 @@ const sessions: Session[] = [
     speakers: [{ name: "Peace Ega", role: "Programs Manager" }],
     tag: "Opening",
   },
+  // 10:10 - 10:20 AM — Audience Engagement / Ice Breaker
   {
     id: "s4",
     time: "10:10 AM",
@@ -78,6 +82,7 @@ const sessions: Session[] = [
     ],
     tag: "Audience Engagement",
   },
+  // 10:20 - 10:30 AM — Lightning Talk 1
   {
     id: "s5",
     time: "10:20 AM",
@@ -87,6 +92,7 @@ const sessions: Session[] = [
     speakers: [{ name: "Bibi Eneje" }],
     tag: "Lightning Talk",
   },
+  // 10:32 - 10:55 AM — Keynote
   {
     id: "s6",
     time: "10:32 AM",
@@ -98,6 +104,7 @@ const sessions: Session[] = [
     speakers: [{ name: "Tejumade Tejuosho" }],
     tag: "Keynote",
   },
+  // 10:55 - 11:40 AM — Panel Session 1
   {
     id: "s7",
     time: "10:55 AM",
@@ -111,6 +118,7 @@ const sessions: Session[] = [
     ],
     tag: "Panel Session 1",
   },
+  // 11:42 - 11:52 AM — Gold Sponsor Showcase
   {
     id: "s8",
     time: "11:42 AM",
@@ -121,6 +129,7 @@ const sessions: Session[] = [
     speakers: [{ name: "Zcash" }],
     tag: "Gold Sponsor",
   },
+  // ~3 min — Audience Photo Selfie
   {
     id: "s9",
     time: "11:52 AM",
@@ -131,9 +140,21 @@ const sessions: Session[] = [
     hashtag: "#WIDSummit2026",
     tag: "Community",
   },
+  // 11:55 AM - 12:40 PM — Panel Session 2 (Bronze Sponsor Showcase moved before it per new schedule)
+  // Bronze Sponsor Showcase comes right after photo per the new schedule text
+  {
+    id: "s10b",
+    time: "11:55 AM",
+    endTime: "12:05 PM",
+    title: "Sponsor Showcase & Open Floor",
+    description: "Ecosystem partner, protocols, presentation.",
+    type: "sponsor",
+    speakers: [{ name: "TS Academy" }],
+    tag: "Bronze Sponsor",
+  },
   {
     id: "s10",
-    time: "11:55 AM",
+    time: "12:05 PM",
     endTime: "12:40 PM",
     title: "Funding, Founding & the Female Factor in DeFi & Blockchain",
     type: "panel",
@@ -146,19 +167,11 @@ const sessions: Session[] = [
     ],
     tag: "Panel Session 2",
   },
-  {
-    id: "s11",
-    time: "12:42 PM",
-    endTime: "12:52 PM",
-    title: "AI x Web3: The Next Frontier for African Women in Technology",
-    type: "lightning",
-    speakers: [{ name: "Faith Njah" }],
-    tag: "Lightning Talk",
-  },
+  // 12:42 - 1:23 PM — Founder's Fireside Chat
   {
     id: "s12",
-    time: "12:55 PM",
-    endTime: "1:35 PM",
+    time: "12:42 PM",
+    endTime: "1:23 PM",
     title: "The Blueprint: A Candid Conversation on Community & Leadership",
     type: "fireside",
     speakers: [
@@ -167,6 +180,17 @@ const sessions: Session[] = [
     ],
     tag: "Founder's Fireside",
   },
+  // 1:25 - 1:35 PM — Lightning Talk 2
+  {
+    id: "s11",
+    time: "1:25 PM",
+    endTime: "1:35 PM",
+    title: "AI x Web3: The Next Frontier for African Women in Technology",
+    type: "lightning",
+    speakers: [{ name: "Faith Njah" }],
+    tag: "Lightning Talk",
+  },
+  // 1:37 - 1:45 PM — Bronze Sponsor Showcase
   {
     id: "s13",
     time: "1:37 PM",
@@ -174,61 +198,67 @@ const sessions: Session[] = [
     title: "Sponsor Showcase & Open Floor",
     description: "Ecosystem partner, protocols, presentation.",
     type: "sponsor",
-    speakers: [{ name: "TS Academy" }],
+    speakers: [{ name: "Betaling Africa" }],
     tag: "Bronze Sponsor",
   },
+  // 1:45 - 1:55 PM — Partner Spotlight
+  {
+    id: "s21",
+    time: "1:45 PM",
+    endTime: "1:55 PM",
+    title: "Partner Spotlight",
+    type: "spotlight",
+    speakers: [{ name: "Roqqu" }],
+    tag: "Partner",
+  },
+  // 1:55 - 2:15 PM — Break / Networking
   {
     id: "s14",
-    time: "1:47 PM",
-    endTime: "2:30 PM",
+    time: "1:55 PM",
+    endTime: "2:15 PM",
     title: "Lunch Break & Community Networking",
     description:
       "Lunch, community wall, partner booths & informal mentorship circles.",
     type: "break",
     tag: "Break",
   },
+  // 2:15 - 2:30 PM — Games Session
   {
     id: "s15",
-    time: "2:30 PM",
-    endTime: "2:45 PM",
+    time: "2:15 PM",
+    endTime: "2:30 PM",
     title: "Games Session",
+    description: "Fun partner-powered games with prizes and giveaways.",
     type: "games",
-    speakers: [{ name: "Faucet Drops" }],
+    speakers: [{ name: "Faucet Drops", role: "Partners" }],
     tag: "Games",
   },
+  // 2:32 - 2:40 PM — Lightning Talk 4
+  {
+    id: "s17",
+    time: "2:32 PM",
+    endTime: "2:40 PM",
+    title: "What to Know About Crypto Compliance in Africa",
+    type: "lightning",
+    speakers: [{ name: "Ayomide Junaid" }],
+    tag: "Lightning Talk",
+  },
+  // 2:42 - 2:52 PM — Bronze Sponsor Showcase
   {
     id: "s16",
-    time: "2:45 PM",
-    endTime: "2:55 PM",
+    time: "2:42 PM",
+    endTime: "2:52 PM",
     title: "Sponsor Showcase & Open Floor",
     description: "Ecosystem partner, protocols, presentation.",
     type: "sponsor",
     speakers: [{ name: "Turing Bitchain" }],
     tag: "Bronze Sponsor",
   },
-  {
-    id: "s17",
-    time: "2:57 PM",
-    endTime: "3:05 PM",
-    title: "What to Know About Crypto Compliance in Africa",
-    type: "lightning",
-    speakers: [{ name: "Ayomide Junaid" }],
-    tag: "Lightning Talk",
-  },
-  {
-    id: "s18",
-    time: "3:05 PM",
-    endTime: "3:15 PM",
-    title: "Sponsor Showcase & Open Floor",
-    description: "Ecosystem partner, protocols, presentation.",
-    type: "sponsor",
-    speakers: [{ name: "Betaling Africa" }],
-    tag: "Bronze Sponsor",
-  },
+  // 2:55 - 3:40 PM — Panel Session 3
   {
     id: "s19",
-    time: "3:17 PM",
-    endTime: "3:55 PM",
+    time: "2:55 PM",
+    endTime: "3:40 PM",
     title: "From Skill to Stack: Transitioning Into Web3 as a Builder",
     type: "panel",
     speakers: [
@@ -239,62 +269,70 @@ const sessions: Session[] = [
     ],
     tag: "Panel Session 3",
   },
+  // 3:42 - 3:52 PM — Lightning Talk 3
   {
     id: "s20",
-    time: "3:55 PM",
-    endTime: "4:05 PM",
+    time: "3:42 PM",
+    endTime: "3:52 PM",
     title: "UNICEF NextGen Builders: Preparing African Women to Lead the Web3 Revolution",
     type: "lightning",
     speakers: [{ name: "Silvia", role: "UNICEF Rep" }],
     tag: "Lightning Talk",
   },
-  {
-    id: "s21",
-    time: "4:05 PM",
-    endTime: "4:10 PM",
-    title: "Partner Spotlight",
-    type: "spotlight",
-    speakers: [{ name: "Roqqu" }],
-    tag: "Partner",
-  },
+  // 4:05 - 4:10 PM — Partner Spotlight
   {
     id: "s22",
-    time: "4:10 PM",
-    endTime: "4:15 PM",
+    time: "4:05 PM",
+    endTime: "4:10 PM",
     title: "Partner Spotlight",
     type: "spotlight",
     speakers: [{ name: "Orbit Pay X" }],
     tag: "Partner",
   },
+  // 4:10 - 4:15 PM — Community / Partners Spotlight
   {
     id: "s23",
-    time: "4:15 PM",
-    endTime: "4:20 PM",
+    time: "4:10 PM",
+    endTime: "4:15 PM",
     title: "Community & Partners Recognition",
-    description: "Partners and community recognition and shout out.",
+    description: "Community and partner recognition and shout-outs.",
     type: "spotlight",
-    speakers: [{ name: "Flames", role: "Host" }],
+    speakers: [
+      { name: "Teen Girls In Blockchain" },
+      { name: "HerDAO" },
+      { name: "TGM Web3 Institute" },
+      { name: "Tulay Labs" },
+      { name: "Web3 Bridge" },
+      { name: "Web3 Afrika" },
+      { name: "LASU Tech" },
+      { name: "Avalanche Team 1" },
+      { name: "Dev3 Pack" },
+      { name: "TCN", role: "Media Partner" },
+    ],
     tag: "Community",
   },
+  // 4:15 - 4:20 PM — Partner Spotlight
   {
     id: "s24",
-    time: "4:20 PM",
-    endTime: "4:25 PM",
+    time: "4:15 PM",
+    endTime: "4:20 PM",
     title: "Partner Spotlight",
     type: "spotlight",
     speakers: [{ name: "Fhenix" }],
     tag: "Partner",
   },
+  // 4:22 - 4:45 PM — Laptop Scholarship & Group Photo
   {
     id: "s25",
-    time: "4:27 PM",
-    endTime: "4:50 PM",
+    time: "4:22 PM",
+    endTime: "4:45 PM",
     title: "Laptop Scholarship & Group Photo",
     description: "Work tool awards, group photography.",
     type: "award",
     speakers: [{ name: "Sarah Idahosa", role: "WID Founder" }],
     tag: "Award",
   },
+  // 4:50 - 5:00 PM — Closing Remarks
   {
     id: "s26",
     time: "4:50 PM",
@@ -425,7 +463,7 @@ export default function SchedulePage() {
 
   return (
     <main className="min-h-screen bg-white mt-[80px] md:mt-[110px] lg:mt-[160px]">
-      {/* Hero banner — matches site's blue texture sections */}
+      {/* Hero banner */}
       <section
         className="px-6 lg:px-10 py-16 md:py-24 text-center"
         style={{
