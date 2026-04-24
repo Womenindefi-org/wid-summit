@@ -64,7 +64,7 @@ const Footer = () => {
                 title: "Summit",
                 links: [
                   { label: "Speakers", url: "/2026/speakers" },
-                  { label: "Schedule", url: "" },
+                  { label: "Schedule", url: "/2026/schedule" },
                   { label: "Register", url: "?register=true" },
                 ],
               },
